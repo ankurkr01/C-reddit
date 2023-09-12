@@ -13,6 +13,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
 <Link href='/' className='flex gap-2 items-center'> 
 <p className='hidden text-zinc-700 text-sm font-medium md:block'>C-reddit</p>
 </Link>
+<div>
+  Hello
+</div>
 
     </div>
   </div>
