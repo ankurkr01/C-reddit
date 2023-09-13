@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { FC } from 'react'
+import { Icons } from './Icons'
+import { buttonVariants } from './ui/Button'
 
 interface NavbarProps {
   
@@ -11,11 +13,13 @@ const Navbar: FC<NavbarProps> = ({}) => {
         {/* Logo  */}
 
 <Link href='/' className='flex gap-2 items-center'> 
+<Icons.logo className='h-8 w-8 sm:h-6 sm:w-6'/>
 <p className='hidden text-zinc-700 text-sm font-medium md:block'>C-reddit</p>
 </Link>
-<div>
-  Hello
-</div>
+
+{/* search bar  */}
+
+<Link href='/sign-in' className={buttonVariants()}>Sign In</Link>
 
     </div>
   </div>
